@@ -154,3 +154,21 @@ button.Restart:active {
   transform: scale(0.95);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
+.back h4 {
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Responsive holatda kichiklashtiramiz */
+@media (max-width: 600px) {
+  .back h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .back h4 {
+    font-size: 14px;
+  }
+}
