@@ -66,6 +66,16 @@ let restart = document.querySelector('.Restart');
 restart.addEventListener('click', () => {
   container.innerHTML = '';
   PreviousCart = undefined;
+
+  // 🔁 Har safar qayta aralashtirish:
+  for (let i = 0; i < 100; i++) {
+    let index1 = Math.floor(Math.random() * icons.length);
+    let index2 = Math.floor(Math.random() * icons.length);
+    let temp = icons[index1];
+    icons[index1] = icons[index2];
+    icons[index2] = temp;
+  }
+
   for (let i = 0; i < cardLength; i++) {
     let cardEl = document.createElement('div');
     cardEl.classList.add('cart');
@@ -101,3 +111,4 @@ restart.addEventListener('click', () => {
     });
   }
 });
+
